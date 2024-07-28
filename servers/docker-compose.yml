@@ -1,0 +1,91 @@
+
+version: '3.8'
+
+services:
+  web1:
+    image: nginx:latest
+    ports:
+      - "8081:80"
+    networks:
+      my_custom_network:
+        ipv4_address: 192.168.1.21
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: '256M'
+        reservations:
+          cpus: '0.25'
+          memory: '128M'
+
+  web2:
+    image: nginx:latest
+    ports:
+      - "8082:80"
+    networks:
+      my_custom_network:
+        ipv4_address: 192.168.1.22
+    deploy:
+      resources:
+        limits:
+          cpus: '1.00'
+          memory: '512M'
+        reservations:
+          cpus: '0.50'
+          memory: '256M'
+
+  web3:
+    image: nginx:latest
+    ports:
+      - "8083:80"
+    networks:
+      my_custom_network:
+        ipv4_address: 192.168.1.23
+    deploy:
+      resources:
+        limits:
+          cpus: '1.50'
+          memory: '1G'
+        reservations:
+          cpus: '1.00'
+          memory: '512M'
+
+  web4:
+    image: nginx:latest
+    ports:
+      - "8084:80"
+    networks:
+      my_custom_network:
+        ipv4_address: 192.168.1.24
+    deploy:
+      resources:
+        limits:
+          cpus: '2.00'
+          memory: '2G'
+        reservations:
+          cpus: '1.50'
+          memory: '1G'
+
+  web5:
+    image: nginx:latest
+    ports:
+      - "8085:80"
+    networks:
+      my_custom_network:
+        ipv4_address: 192.168.1.25
+    deploy:
+      resources:
+        limits:
+          cpus: '2.50'
+          memory: '3G'
+        reservations:
+          cpus: '2.00'
+          memory: '2G'
+
+networks:
+  my_custom_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.1.0/24
+
