@@ -146,7 +146,7 @@ Les requêtes forwardées depuis le load balancer suivent cet ordre :
   vers → web3_1
 
 ### Retour de simulation côté serveur web
-![Retour de simulation côté serveur web](images/Rust1RRobin.png)
+![Retour de simulation côté serveur web](images/Retour_Serveur_Round-Robin.png)
 
 ---
 
