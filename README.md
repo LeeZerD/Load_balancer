@@ -152,10 +152,11 @@ Les requêtes forwardées depuis le load balancer suivent cet ordre :
 
 ### Health Check
 
-Lors du lancement du load balancer avec `cargo run`, une entrée utilisateur permet de sélectionner l’algorithme à utiliser (ici Random). Ensuite, un premier retour de l'état de santé des serveurs web actifs est affiché, issu de la fonction `performance_health_check` dans le fichier `main.rs`.
+Lors du lancement du load balancer avec `cargo run`, une entrée utilisateur permet de sélectionner l’algorithme à utiliser (ici Random). Ensuite, un premier retour de l'état de santé des serveurs web actifs est affiché, issu de la fonction `performance_health_check` dans le fichier `main.rs`
+![Retour](images/Retour_fn-HealCheck.png)
 
 Un check périodique de l’état des serveurs web est également effectué, issu de la fonction `start_health_check` dans le fichier `main.rs`.
-
+![Retour](images/Retour_fn-HealCheck-periodique.png)
 ---
 
 ### Random
@@ -170,7 +171,7 @@ Les requêtes forwardées depuis le load balancer arrivent sur le serveur web al
 ### Retour de simulation côté serveur web
 
 Sur cette capture d’écran, on peut voir que les serveurs cibles ne suivent pas un ordre périodique.
-
+![Retour](images/Retour_serveur_algo-Random.png)
 ---
 
 ## Contributions
