@@ -156,7 +156,8 @@ Lors du lancement du load balancer avec `cargo run`, une entrée utilisateur per
 ![Retour](images/Retour_fn-HealCheck.png)
 
 Un check périodique de l’état des serveurs web est également effectué, issu de la fonction `start_health_check` dans le fichier `main.rs`.
-![Retour](images/Retour_fn-HealCheck-periodique.png)
+
+![Retour](images/Retour_fn-Health-Check-periodique.png)
 ---
 
 ### Random
