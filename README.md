@@ -172,6 +172,7 @@ Les requêtes forwardées depuis le load balancer arrivent sur le serveur web al
 ### Retour de simulation côté serveur web
 
 Sur cette capture d’écran, on peut voir que les serveurs cibles ne suivent pas un ordre périodique.
+
 ![Retour](images/Retour_serveur_algo-Random.png)
 ---
 
