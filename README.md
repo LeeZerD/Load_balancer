@@ -1,3 +1,5 @@
+Voici votre document corrigé en Markdown :
+
 ```markdown
 # README
 
@@ -34,7 +36,6 @@ sudo systemctl start docker
 sudo systemctl enable docker
 sudo usermod -aG docker $USER
 newgrp docker
-```
 ```
 
 ---
@@ -77,7 +78,7 @@ docker-compose --version
 
 Une fois les installations faites, procéder aux tests pour voir si tout fonctionne :
 
-#### Etape 1 : Lancement des instances serveurs web
+#### Étape 1 : Lancement des instances serveurs web
 
 ```sh
 ~/load_balancert/servers$ docker-compose up
@@ -85,13 +86,13 @@ Une fois les installations faites, procéder aux tests pour voir si tout fonctio
 
 (bloque le terminal pour visualiser les logs)
 
-#### Etape 2 : Lancement du load balancer
+#### Étape 2 : Lancement du load balancer
 
 ```sh
 ~/load_balancer/load_balancer$ cargo run
 ```
 
-#### Etape 3 : Vérification de la connectivité - Simulation des requêtes clients
+#### Étape 3 : Vérification de la connectivité - Simulation des requêtes clients
 
 - **Test individuel**
   ```sh
@@ -183,7 +184,7 @@ Les contributions sont les bienvenues ! Pour contribuer, veuillez suivre les ét
 2. Créer une branche pour votre fonctionnalité ou correctif.
 3. Soumettre une pull request avec une description détaillée de vos modifications.
 
-## License
+## Licence
 
 Ce projet est sous la licence MIT. Voir le fichier LICENSE pour plus de détails.
 
