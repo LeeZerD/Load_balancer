@@ -1,6 +1,3 @@
-Voici votre document corrigé en Markdown :
-
-```markdown
 # README
 
 ## Projet fait depuis une distribution Debian 12 Bookworm
